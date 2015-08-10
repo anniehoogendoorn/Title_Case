@@ -1,4 +1,13 @@
 Title Case Spec
 
-1. Make one word title uppercase - beowulf - Beowulf
-2. Make multiple word title uppercase - beowulf's revenge - Beowulf's Revenge
+1. Make one letter uppercase - b - B
+
+2. Make one word title uppercase - beowulf - Beowulf
+
+3. Make multiple word title uppercase - beowulf begins - Beowulf Begins
+
+4. Ignore non-letter characters - beowulf's revenge - Beowulf's Revenge
+                                - 57 beowulfs' - 57 Beowulfs
+
+5. Do not capitalize designated words (like prepositions, conjunctions, etc) -
+    beowulf from brighton beach - Beowulf from Brighton Beach
