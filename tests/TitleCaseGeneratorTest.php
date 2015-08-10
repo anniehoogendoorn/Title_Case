@@ -29,5 +29,18 @@
             //Assert
             $this->assertEquals("The Little Mermaid", $result);
         }
+
+        function test_makeTitleCase_designatedWords()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "jabba the hut";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Jabba the Hut", $result);
+        }
     }
 ?>
