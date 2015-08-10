@@ -69,5 +69,18 @@
             //Assert
             $this->assertEquals("57 Beowulf Alternative Endings!!", $result);
         }
+
+        function test_makeTitleCase_upperCaseCharacters()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "THE 57 BEOWULF ALTERNATIVE ENDINGS WERE TERRIBLE";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("The 57 Beowulf Alternative Endings Were Terrible", $result);
+        }
     }
 ?>
