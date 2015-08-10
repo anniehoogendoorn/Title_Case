@@ -56,5 +56,18 @@
             //Assert
             $this->assertEquals("From Dusk till Dawn", $result);
         }
+
+        function test_makeTitleCase_nonLetterCharacters()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "57 beowulf alternative endings!!";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("57 Beowulf Alternative Endings!!", $result);
+        }
     }
 ?>
