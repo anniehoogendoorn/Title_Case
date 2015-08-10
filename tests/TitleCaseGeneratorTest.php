@@ -41,6 +41,20 @@
 
             //Assert
             $this->assertEquals("Jabba the Hut", $result);
+
+        }
+
+        function test_makeTitleCase_firstWord()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "from dusk till dawn";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("From Dusk till Dawn", $result);
         }
     }
 ?>
